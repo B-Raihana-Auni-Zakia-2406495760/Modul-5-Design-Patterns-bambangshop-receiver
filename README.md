@@ -86,7 +86,9 @@ This is the place for you to write reflections:
 
 #### Reflection Subscriber-1
 1. RwLock<> jauh lebih optimal dibandingkan Mutex<> karena frekuensi operasi Read jauh lebih sering daripada operasi Write. RwLock<> banyak thread dapat membaca secara bersamaan, sedangkan Mutex<> mengunci seluruh akses walaupun hanya untuk membaca.
-
 2. Rust sangat memprioritaskan memory safety dan mencegah terjadinya data race. Oleh karena itu, konsep mutasi statis bebas seperti di Java tidak diterapkan karena bertentangan dengan prinsip ownership dan konkurensi.
 
 #### Reflection Subscriber-2
+1. Ya, saya mengeksplorasi file src/lib.rs dan beberapa file utilitas untuk memahami konfigurasi Rocket, inisialisasi REQWEST_CLIENT, dan pembuatan response error yang konsisten menggunakan compose_error_response
+2. Konsep Observer membuat sistem menjadi loosely coupled. Publisher tidak perlu mengetahui detail dari Subscriber, selama Subscriber memiliki endpoint yang sesuai. Penambahan Publisher baru juga cukup mudah selama Receiver terhubung dengan mekanisme routing atau load balancer yang mengelola daftar endpoint.
+3. Ya, penggunaan Postman untuk testing dan dokumentasi API sangat membantu. Collection yang tersedia dapat digunakan sebagai acuan atau kontrak antara tim backend dan frontend dalam pengembangan proyek selanjutnya.
