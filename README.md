@@ -61,12 +61,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
 ## Mandatory Checklists (Subscriber)
 -   [ ] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Notification repository.`
-    -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [V] Commit: `Create Notification model struct.`
+    -   [V] Commit: `Create SubscriberRequest model struct.`
+    -   [V] Commit: `Create Notification database and Notification repository struct skeleton.`
+    -   [V] Commit: `Implement add function in Notification repository.`
+    -   [V] Commit: `Implement list_all_as_string function in Notification repository.`
+    -   [V] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
