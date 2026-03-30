@@ -85,5 +85,8 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+1. RwLock<> jauh lebih optimal dibandingkan Mutex<> karena frekuensi operasi Read jauh lebih sering daripada operasi Write. RwLock<> banyak thread dapat membaca secara bersamaan, sedangkan Mutex<> mengunci seluruh akses walaupun hanya untuk membaca.
+
+2. Rust sangat memprioritaskan memory safety dan mencegah terjadinya data race. Oleh karena itu, konsep mutasi statis bebas seperti di Java tidak diterapkan karena bertentangan dengan prinsip ownership dan konkurensi.
 
 #### Reflection Subscriber-2
